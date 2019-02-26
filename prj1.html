@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Material icons from google -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      .tab {
+        margin-left: 40px;
+      }
+    </style>
+
+    <title>Resume</title>
+  </head>
+  <body>
+    <header>
+      <nav class="light-blue">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a
+              href="http://www.sjsu.edu/"
+              target="_blank"
+              class="brand-logo left"
+            >
+              SJSU
+            </a>
+            <ul class="right">
+              <li><a href="./index.html">Resume</a></li>
+              <li><a href="./courses.html">Courses</a></li>
+              <li>
+                <a
+                  href="./index.html"
+                  class="dropdown-button"
+                  data-target="dropdown1"
+                  >Projects
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="./prj1.html">Ray Tracer</a>
+        </li>
+        <li>
+          <a href="./prj2.html">3D Lunar Lander Simulation</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+            <h4>Ray Tracer</h4>
+            <p>
+              Ray Tracing is an image rendering technique. This application uses
+              this technique to render multiple 3d images. This application is
+              created with openFrameworks.
+            </p>
+            <h5>Concepts Supported:</h5>
+            <p>
+              <i class="material-icons green-text">check</i>Shading Algorithms:
+              Lambert, Blinn-Phong
+            </p>
+            <p>
+              <i class="material-icons green-text">check</i>Shading Algorithms:
+              Supersampling Anti-Aliasing
+            </p>
+            <p>
+              <i class="material-icons green-text">check</i>Shading Algorithms:
+              Support basic reflections and shadows rendering
+            </p>
+            <h5>Controls:</h5>
+            <p>
+              Press F1 - main cam, F2 - side cam, F3 - preview Cam <br />
+              Press c to lock/unlock the main cam <br />
+              To Create Object (camera must be locked first): <br />
+              <span class="tab">Press 1 - Sphere</span> <br />
+              <span class="tab">Press 2 - Point Light</span> <br />
+              To Set KeyFrames (camera must be locked first): <br />
+              <span class="tab"
+                >Click on the object, hold, and press s - Set Start Key Frame
+                Position</span
+              ><br />
+              <span class="tab"
+                >Click on the object, hold, and press e - Set End Key Frame
+                Position</span
+              >
+              <br />
+              <span class="tab">Press spacebar - To see objects in action</span
+              ><br />
+              To Render Image (default location: bin/data/): <br />
+              <span class="tab"
+                >Set the total number of frames with the slidebar</span
+              ><br />
+              <span class="tab"
+                >Press v - to enable ray tracing multiple frames</span
+              ><br />
+              <span class="tab"
+                >Press left-arrow-key - Set all objects to their start key frame
+                position</span
+              ><br />
+              <span class="tab">Press r - start rendering</span><br />
+              For more information, please take visit the Github repo.
+            </p>
+          </div>
+          <div class="col s6">
+            <img
+              src="./image/ray_traced.jpg"
+              alt="ray traced scene"
+              class="responsive-img"
+              style="margin-top:20px"
+            />
+            <img
+              src="./image/anti_aliasing.png"
+              alt="anti_aliasing"
+              class="responsive-img"
+              style="margin-top:20px"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright">
+        <div class="container center">
+          Copyright &copy; 2019
+        </div>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JQuery scripts from google-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".dropdown-button").dropdown({
+          hover: true,
+          constrainWidth: false
+        });
+      });
+    </script>
+  </body>
+</html>

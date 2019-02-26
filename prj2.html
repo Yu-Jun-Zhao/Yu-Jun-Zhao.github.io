@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Material icons from google -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      .tab {
+        margin-left: 40px;
+      }
+    </style>
+    <title>Resume</title>
+  </head>
+  <body>
+    <header>
+      <nav class="light-blue">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="http://www.sjsu.edu/" target="_blank" class="brand-logo left">
+              SJSU
+            </a>
+            <ul class="right">
+              <li><a href="./index.html">Resume</a></li>
+              <li><a href="./courses.html">Courses</a></li>
+              <li>
+                <a
+                  href="./index.html"
+                  class="dropdown-button"
+                  data-target="dropdown1"
+                  >Projects
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <ul id="dropdown1" class="dropdown-content">
+        <li>
+          <a href="./prj1.html">Ray Tracer</a>
+        </li>
+        <li>
+          <a href="./prj2.html">3D Lunar Lander Simulation</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="cyan grey lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+              <h4>3D SPACE LANDER</h4>
+              <p>
+                A 3d simulation game. The goal of this application is to simulate
+                the motion of the lunar lander.
+              </p>
+            <img src="./image/space_lander.png" alt="space lander" class="responsive-img" >
+            <h5>Concepts Supported:</h5>
+            <p>
+              <i class="material-icons green-text">check</i>Basic Physics
+              Engine: Uses kinematic physics.
+            </p>
+            <p>
+              <i class="material-icons green-text">check</i>Octree for collision
+              detection and mouse-ray detection.
+            </p>
+            <p>
+              <i class="material-icons green-text">check</i>Particle System for
+              simulating the thruster flame.
+            </p>  
+          </div>
+          <div class="col s5 offset-s1">
+            
+            
+            <h5>Controls:</h5>
+            <p>
+              <h6>To Switch Cameras: </h6><br />
+              <span class="tab">F1 - Main Cam</span> <br />
+              <span class="tab">F2 - Front Cam</span> <br />
+              <span class="tab">F3 - Bottom Cam</span> <br />
+              <span class="tab">F4 - Track Cam</span> <br />
+              Two different ways to control the spacecraft: <br>
+
+              <h6>Arrow Keys:</h6> <br>
+              <span class="tab">Up for +y</span> <br />
+              <span class="tab">Down for -y</span> <br />
+              <span class="tab">Left for -x</span> <br />
+              <span class="tab">Right for +x</span> <br />
+              <span class="tab">Ctrl + Up for +z</span> <br />
+              <span class="tab">Ctrl + Down for -z</span> <br />
+
+              <h6>Mouse Click:</h6> <br>
+              <span class="tab">Press h - to hover</span> <br />
+              <span class="tab">Then click anywhere on the ground</span> <br />
+              
+              <h6>Other Controls</h6>
+              <span class="tab">Press s - screenshot</span> <br />
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright">
+        <div class="container center">
+          Copyright &copy; 2019
+        </div>
+      </div>
+    </footer>
+
+    <!--Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--JQuery scripts from google-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".dropdown-button").dropdown({
+          hover: true,
+          constrainWidth: false
+        });
+      });
+    </script>
+  </body>
+</html>
