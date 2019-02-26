@@ -16,7 +16,8 @@
     />
     <style>
       .tab {
-        margin-left: 40px;
+        padding-left: 40px;
+        display: inline-block;
       }
     </style>
 
@@ -63,7 +64,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col m6 s12">
+          <div class="col l6 s12">
             <h4>Ray Tracer</h4>
             <p>
               Ray Tracing is an image rendering technique. This application uses
@@ -84,40 +85,49 @@
               Support basic reflections and shadows rendering
             </p>
             <h5>Controls:</h5>
-            <p>
-              Press F1 - main cam, F2 - side cam, F3 - preview Cam <br />
-              Press c to lock/unlock the main cam <br />
-              To Create Object (camera must be locked first): <br />
-              <span class="tab">Press 1 - Sphere</span> <br />
-              <span class="tab">Press 2 - Point Light</span> <br />
-              To Set KeyFrames (camera must be locked first): <br />
-              <span class="tab"
-                >Click on the object, hold, and press s - Set Start Key Frame
-                Position</span
-              ><br />
-              <span class="tab"
-                >Click on the object, hold, and press e - Set End Key Frame
-                Position</span
-              >
-              <br />
-              <span class="tab">Press spacebar - To see objects in action</span
-              ><br />
-              To Render Image (default location: bin/data/): <br />
-              <span class="tab"
-                >Set the total number of frames with the slidebar</span
-              ><br />
-              <span class="tab"
-                >Press v - to enable ray tracing multiple frames</span
-              ><br />
-              <span class="tab"
-                >Press left-arrow-key - Set all objects to their start key frame
-                position</span
-              ><br />
-              <span class="tab">Press r - start rendering</span><br />
-              For more information, please take visit the Github repo.
-            </p>
+            <table class="responsive-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      Press F1 - main cam, F2 - side cam, F3 - preview Cam
+                      <br />
+                      Press c to lock/unlock the main cam <br />
+                      To Create Object (camera must be locked first): <br />
+                      <span class="tab">Press 1 - Sphere</span> <br />
+                      <span class="tab">Press 2 - Point Light</span> <br />
+                      To Set KeyFrames (camera must be locked first): <br />
+                      <span class="tab"
+                        >Click on the object, hold, and press s - Set Start Key
+                        Frame Position</span
+                      ><br />
+                      <span class="tab"
+                        >Click on the object, hold, and press e - Set End Key
+                        Frame Position</span
+                      >
+                      <br />
+                      <span class="tab"
+                        >Press spacebar - To see objects in action</span
+                      ><br />
+                      To Render Image (default location: bin/data/): <br />
+                      <span class="tab"
+                        >Set the total number of frames with the slidebar</span
+                      ><br />
+                      <span class="tab"
+                        >Press v - to enable ray tracing multiple frames</span
+                      ><br />
+                      <span class="tab"
+                        >Press left-arrow-key - Set all objects to their start
+                        key frame position</span
+                      ><br />
+                      <span class="tab">Press r - start rendering</span><br />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="col m6 s12">
+          <div class="col l6 s12">
             <img
               src="./image/ray_traced.jpg"
               alt="ray traced scene"
